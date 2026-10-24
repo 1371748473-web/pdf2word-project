@@ -1,0 +1,39 @@
+# ============ Python ============
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv*/
+venv/
+
+# ============ 构建产物（数十 GB） ============
+build/
+build-lite/
+dist/
+installer_out/
+
+# ============ 实验数据与打包测试残留 ============
+experiments/
+test_gpu/
+test_lite/
+
+# ============ 模型与推理缓存 ============
+model_cache/
+paddlex_cache/
+
+# ============ IDE / 工具数据 ============
+.trae-html-share-packages/
+.workbuddy/
+.idea/
+.vscode/
+*.code-workspace
+
+# ============ 临时文件 ============
+_gpu.iss
+*.log
+.DS_Store
+Thumbs.db
+
+# ============ 用户私有数据 ============
+*.pdf
+!tests/*.pdf

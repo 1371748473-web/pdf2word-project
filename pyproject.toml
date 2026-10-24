@@ -1,0 +1,25 @@
+[project]
+name = "pdf2word"
+version = "1.0.0"
+description = "PDF to Word converter with layout preservation, scanned-page OCR and in-image text extraction"
+requires-python = ">=3.10"
+dependencies = [
+    "pymupdf",
+    "pdf2docx",
+    "python-docx",
+    "pillow",
+    "paddlepaddle-gpu",
+    "paddleocr",
+    "pyside6",
+]
+
+[project.scripts]
+pdf2word = "pdf2word.cli:main"
+pdf2word-gui = "pdf2word.gui:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
